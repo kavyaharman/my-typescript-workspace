@@ -1,0 +1,61 @@
+{
+  "name": "my-dashboard",
+  "projectType": "application",
+  "sourceRoot": "apps/web",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "outputs": ["{projectRoot}/.output"],
+      "options": {
+        "cwd": "apps/web",
+        "command": "nuxt build"
+      },
+      "configurations": {},
+      "metadata": {
+        "technologies": ["nuxt", "vue"],
+        "description": "Builds the Nuxt application for production"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/web",
+        "command": "nuxt dev"
+      },
+      "configurations": {},
+      "metadata": {
+        "technologies": ["nuxt", "vue"],
+        "description": "Starts the development server"
+      }
+    },
+    "generate": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "outputs": ["{projectRoot}/dist"],
+      "options": {
+        "cwd": "apps/web",
+        "command": "nuxt generate"
+      },
+      "configurations": {},
+      "metadata": {
+        "technologies": ["nuxt", "vue"],
+        "description": "Generates a static website"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/web",
+        "command": "nuxt preview"
+      },
+      "configurations": {},
+      "metadata": {
+        "technologies": ["nuxt", "vue"],
+        "description": "Starts the preview server for production build"
+      }
+    }
+  },
+  "tags": []
+}
