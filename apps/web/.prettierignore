@@ -1,0 +1,30 @@
+# Dependencies
+node_modules
+/.nuxt
+dist
+/.output
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime data
+.DS_Store
+
+# Build
+.nuxt
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Auto-generated files
+.nuxi
